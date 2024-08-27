@@ -21,7 +21,7 @@ The repository is organized into directories for each lab, with each directory c
   - `documentation/`: Includes the lab instructions.
 
 - **Instructions**:
-  After cloning the repository, you can directly run the following scripts to compile and execute the code:
+  After cloning the repository. Change the directory to assignment01 and then you can directly run the following scripts to compile and execute the code:
 
   ```bash
   ./compile-1a-and-execute.sh
@@ -44,7 +44,7 @@ This assignment focuses on daemon processes and process management. The lab invo
 - `documentation/`: Includes the lab instructions.
 
 ## Instructions
-After cloning the repository, follow these steps to compile and execute the code:
+After cloning the repository. Change the directory to assignment02 and then follow these steps to compile and execute the code:
 
 ```bash
 # Compile the source code
@@ -54,4 +54,41 @@ gcc -o run_daemon code/1.c
 sudo ./run_daemon start
 
 # Stop the daemon process with root privileges
-sudo ./run_daemon stop
+sudo ./run_daemon stop2
+```
+
+### Assignment 03:
+## Description
+This lab focuses on interprocess communication and process management using system calls in C. The lab involves creating multiple C programs to demonstrate the use of pipes and other system calls to implement command processing and sequence generation.
+
+## Objectives
+- Implement interprocess communication using pipes.
+- Understand and use system calls: `pipe()`, `dup2()`, `fork()`, `exec()`, `write()`, and `read()`.
+- Develop C programs to compute sequences and handle commands with pipes.
+
+## Files
+- `code/`: Contains the source code for Assignment 03, including the implementation of the required programs.
+- `documentation/`: Includes the lab instructions.
+
+## Instructions
+After cloning the repository. Change the directory to assignment03 and then follow these steps to compile and execute the code:
+
+### Compilation
+Compile each program using the following commands:
+```bash
+# Compile the first program to compute sequences
+gcc -o compute_sequence_1 code/ai.c
+
+# Compile the second program to read integers and compute sequences
+gcc -o compute_sequence_2 code/aii.c
+```
+
+
+Note: Before executing the next command, ensure that compute_sequence_1 and compute_sequence_2 are compiled first.
+```Bash
+# Compile the third program for handling command input and processing with pipes
+gcc -o process_commands code/aiii.c
+
+# Compile the fourth program for advanced pipe management and execution
+gcc -o aiv code/aiv.c
+```

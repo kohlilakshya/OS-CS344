@@ -28,3 +28,30 @@ The repository is organized into directories for each lab, with each directory c
   ./compile-1b-and-execute.sh
   ./compile-1c-and-execute.sh
   ./compile-1d-and-execute.sh
+
+# Assignment 02
+
+## Description
+This assignment focuses on daemon processes and process management. The lab involves creating and managing a daemon process that generates and logs a sequence of numbers based on the process ID.
+
+## Objectives
+- Implement a daemon process in C that performs specific tasks including process creation, logging, and sequence generation.
+- Understand and use system calls: `fork()`, `umask()`, `setsid()`, `chdir()`, `openlog()`, `syslog()`, `wait()`, `exit()`, `kill()`, and `sleep()`.
+- Implement functions to start and stop the daemon process, ensuring proper resource management and logging.
+
+## Files
+- `code/`: Contains the source code for Assignment 02, including the implementation of the daemon process.
+- `documentation/`: Includes the lab instructions.
+
+## Instructions
+After cloning the repository, follow these steps to compile and execute the code:
+
+```bash
+# Compile the source code
+gcc -o run_daemon code/1.c
+
+# Start the daemon process with root privileges
+sudo ./run_daemon start
+
+# Stop the daemon process with root privileges
+sudo ./run_daemon stop

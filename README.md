@@ -142,3 +142,23 @@ gcc -o aiv code/aiv.c
      ./client
      ```
 
+# Assignment 07
+
+- **Description**: This assignment focuses on process synchronization using the Readers-Writers problem. It involves understanding and implementing System V semaphores and shared memory to manage concurrent access.
+
+- **Objectives**:
+  - Implement semaphore wait and signal operations.
+  - Create and manage shared memory segments.
+  - Ensure synchronization between multiple writers and readers.
+
+
+- **Files**:
+  - `code/`: Contains the source code for Assignment 07, including three programs:
+    - `repository.c`: Creates and initializes the shared memory segment with a "Hello world!" program.
+    - `writer.c`: Demonstrates writer behavior, including semaphore operations and writing to shared memory.
+    - `reader.c`: Demonstrates reader behavior, including semaphore operations and reading from shared memory.
+
+  - `documentation/`: Includes the lab instructions.
+
+- **Instructions**:
+After cloning the repository, compile the code and run the programs as give in the `README.md` file in the directory `assignment07/code/`

@@ -162,3 +162,27 @@ gcc -o aiv code/aiv.c
 
 - **Instructions**:
 After cloning the repository, compile the code and run the programs as give in the `README.md` file in the directory `assignment07/code/`
+
+# Assignment 08
+
+**Description**: This lab focuses on process synchronization using System V semaphores and shared memory, modeled after the Dining Philosophers problem. It involves creating a C program to manage database transactions with synchronization primitives.
+
+**Objectives**:
+- Implement semaphore wait and signal operations.
+- Create and manage shared memory segments.
+- Simulate philosopher behavior with database transactions.
+- Ensure synchronization between multiple processes.
+
+**Files**:
+- `code/`: Contains the source code for assignment 08, including one program:
+  - `1.c`: Implements the Dining Philosophers problem using System V semaphores and shared memory.
+
+- `documentation/`: Includes instructions and relevant resources for the lab.
+
+- **Instructions**:
+  After cloning the repository, follow these steps:
+     ```bash
+     cd assignment08
+     gcc code/1.c -o 1
+     ./1
+     ```

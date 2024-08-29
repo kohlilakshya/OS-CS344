@@ -186,3 +186,34 @@ After cloning the repository, compile the code and run the programs as give in t
      gcc code/1.c -o 1
      ./1
      ```
+
+# Assignment 9
+
+**Description**: This lab focuses on multithreading using POSIX threads (pthreads) to validate a Sudoku puzzle. Three different methods are implemented to check the validity of rows, columns, and 3x3 subgrids.
+
+**Objectives**:
+- Implement multithreading with `pthread_create`, `pthread_join`, etc.
+- Pass parameters to threads using a struct.
+- Validate Sudoku rows, columns, and subgrids with different threading strategies.
+- Aggregate results from worker threads to determine puzzle validity.
+
+**Files**:
+- `code/`: Contains the source code:
+  - `m1.c`: One thread for columns, one for rows, nine for 3x3 subgrids.
+  - `m2.c`: One thread per column, one per row, one for all 3x3 subgrids.
+  - `m3.c`: One thread per column, one per row, nine for 3x3 subgrids.
+
+- `documentation/`: Includes instructions and resources.
+
+**Instructions**:
+To compile and run each method:
+   ```bash
+   cd assignment10/code
+   gcc m1.c -o m1
+   ./m1
+
+   gcc m2.c -o m2 
+   ./m2
+
+   gcc m3.c -o m3 
+   ./m3

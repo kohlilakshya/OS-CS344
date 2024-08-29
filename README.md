@@ -217,3 +217,26 @@ To compile and run each method:
 
    gcc m3.c -o m3 
    ./m3
+  ```
+
+# Assignment 1-
+
+**Description**: This assignment involves matrix multiplication using POSIX threads (pthreads). Create threads to handle matrix multiplication in parallel and ensure proper synchronization.
+
+**Objectives**:
+- Use `pthread_create`, `pthread_join`, etc.
+- Assign rows to threads for parallel computation.
+- Ensure thread synchronization.
+- Write the result matrix to a file.
+
+**Files**:
+- `code/`: Contains the source code:
+  - `1.c`: The main program file where matrix multiplication using threads is implemented.
+- `documentation/`: Includes instructions and resources.
+
+**Instructions**:
+   ```bash
+   cd assignment10/code
+   gcc 1.c -o 1
+   ./1
+   ```
